@@ -1,0 +1,43 @@
+STAR START --> Fri Dec 15 15:14:06 2017
+[1]Stared! --> AlbertRui/AlbertRui.github.io
+[2]Stared! --> WangYue666666/ijkPlayer
+[3]Stared! --> WangYue666666/ZHHPTest
+[4]Stared! --> WangYue666666/deom-WYButton
+Traceback (most recent call last):
+  File "autostar.py", line 152, in <module>
+    sys.exit(main())
+  File "autostar.py", line 148, in main
+    app.autorun(argv)
+  File "autostar.py", line 143, in autorun
+    object_.run()
+  File "autostar.py", line 53, in run
+    self.star(project_name)
+  File "autostar.py", line 48, in star
+    headers={'Content-Length': '0'}, auth=self.auth)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/requests/api.py", line 126, in put
+    return request('put', url, data=data, **kwargs)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/urllib3/connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/urllib3/connection.py", line 326, in connect
+    ssl_context=context)
+  File "/home/jing/workspace/.virtualenvs/gitstar/local/lib/python2.7/site-packages/urllib3/util/ssl_.py", line 329, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python2.7/ssl.py", line 353, in wrap_socket
+    _context=self)
+  File "/usr/lib/python2.7/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python2.7/ssl.py", line 830, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
