@@ -57,4 +57,4 @@ crontab -e
 
 Example:
 
-50 13 * * 1,3,5 /usr/bin/python2 /home/knitmesh/tools/gitstar/gitstar.py >> /home/knitmesh/tools/gitstar/gitstar.log  2>&1
+50 13 * * 1,3,5 /usr/bin/python2 /home/knitmesh/tools/gitstar/autostar.py >> /home/knitmesh/tools/gitstar/gitstar.log  2>&1

@@ -38,13 +38,13 @@ usage: gitstar.py [-h]
 Star up automatically
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help            显示帮助信息
   --target [{star,follow,fork} [{star,follow,fork} ...]]
-                        Set operation target, <'star|follow|fork> default all
+                        设置执行的操作, <'star|follow|fork> 默认 all
   -r SCORER, --scoreR SCORER
-                        Set scoreR maximum, default 10
+                        设置最大欠赞数量, 超过此欠赞数量的帐号将被在点赞列表排除 默认 10
   -s SLEEP_TIME, --sleep-time SLEEP_TIME
-                        Set sleep time, default 5
+                        设置等待间隔, 默认 5 秒
 ```
 运行```python2  gitstar.py```  
 Everything is ok,hooray!

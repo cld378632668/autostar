@@ -15,8 +15,4 @@
 # vi/vim temp file
 *.swp
 
-# pip
-conf/pip.conf
-
-# yum
-conf/yum.repo
+settings.py
