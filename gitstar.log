@@ -75,3 +75,211 @@ STAR START --> Fri Dec 15 15:28:37 2017
 [15]Stared! --> facebesidewyj/webpack_demo
 [16]Stared! --> liudf0716/lianke
 [17]Stared! --> hzlshen/ionic-geting
+/usr/bin/python2: can't open file '/home/jing/tools/gitstar/autoSrar.py': [Errno 2] No such file or directory
+/usr/bin/python2: can't open file '/home/jing/tools/gitstar/autoSrar.py': [Errno 2] No such file or directory
+STAR START --> Fri Dec 15 15:55:11 2017
+[1]Stared! --> AlbertRui/AlbertRui.github.io
+Traceback (most recent call last):
+  File "/home/jing/tools/gitstar/autostar.py", line 152, in <module>
+    sys.exit(main())
+  File "/home/jing/tools/gitstar/autostar.py", line 148, in main
+    app.autorun(argv)
+  File "/home/jing/tools/gitstar/autostar.py", line 143, in autorun
+    object_.run()
+  File "/home/jing/tools/gitstar/autostar.py", line 54, in run
+    print("[%d]Stared! --> %s" % (self.counter, project_name))
+  File "/home/jing/tools/gitstar/autostar.py", line 28, in counter
+    time.sleep(self.sleep_time)
+KeyboardInterrupt
+STAR START --> Fri Dec 15 15:55:40 2017
+Traceback (most recent call last):
+  File "/home/jing/tools/gitstar/autostar.py", line 152, in <module>
+    sys.exit(main())
+  File "/home/jing/tools/gitstar/autostar.py", line 148, in main
+    app.autorun(argv)
+  File "/home/jing/tools/gitstar/autostar.py", line 143, in autorun
+    object_.run()
+  File "/home/jing/tools/gitstar/autostar.py", line 51, in run
+    projects = self.projects_list()
+  File "/home/jing/tools/gitstar/autostar.py", line 40, in projects_list
+    'Cookie': self.cookie})
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 70, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 56, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 423, in send
+    timeout=timeout
+  File "/usr/local/lib/python2.7/dist-packages/requests/packages/urllib3/connectionpool.py", line 594, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python2.7/dist-packages/requests/packages/urllib3/connectionpool.py", line 384, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1136, in getresponse
+    response.begin()
+  File "/usr/lib/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+KeyboardInterrupt
+Killed
+STAR START --> Fri Dec 15 15:59:01 2017
+[1]Stared! --> AlbertRui/AlbertRui.github.io
+[2]Stared! --> WangYue666666/ijkPlayer
+[3]Stared! --> WangYue666666/ZHHPTest
+[4]Stared! --> WangYue666666/deom-WYButton
+[5]Stared! --> libenhe/hotel
+[6]Stared! --> libenhe/java_web_practice
+[7]Stared! --> libenhe/libenhe.github.io
+[8]Stared! --> acelwiker/GitAutoFork
+[9]Stared! --> liaoziyang/ContentAssist
+[10]Stared! --> liaoziyang/HolidayDateTime
+[11]Stared! --> liaoziyang/stackneveroverflow
+[12]Stared! --> liaoziyang/Stanford-OpenIE-Spider
+[13]Stared! --> liaoziyang/negapoji
+[14]Stared! --> UCodeUStory/DeepLearn-Tensorflow
+[15]Stared! --> facebesidewyj/webpack_demo
+[16]Stared! --> liudf0716/lianke
+[17]Stared! --> hzlshen/ionic-geting
+FOLLOW START --> Fri Dec 15 16:01:02 2017
+[1]Followed! -->libenhe
+[2]Followed! -->AlbertRui
+[3]Followed! -->cuijun123
+[4]Followed! -->goldze
+[5]Followed! -->WangYue666666
+FORK START --> Fri Dec 15 16:01:36 2017
+get total github repo:129
+[1]Forked! --> peng8350/JPSpringMenu
+[2]Forked! --> peng8350/JPTabBar
+[3]Forked! --> acelwiker/GitAutoFork
+[4]Forked! --> okaychen/practice
+[5]Forked! --> 18010927657/Job
+[6]Forked! --> 18010927657/HuaweiApp
+[7]Forked! --> 18010927657/xiecheng
+[8]Forked! --> 18010927657/2016ESRI-web-C280
+[9]Forked! --> AlbertRui/Algorithm
+[10]Forked! --> CoderLISIDI/SDTrackTool
+[11]Forked! --> SoulLights/SLPlayer
+[12]Forked! --> Joezeo/screenshoot
+[13]Forked! --> Joezeo/DataAnalyse
+[14]Forked! --> Joezeo/pythonspider
+[15]Forked! --> Lauzy/LBehavior
+[16]Forked! --> Lauzy/PlayPauseView
+[17]Forked! --> MQZHot/ZLaunchAdVC
+[18]Forked! --> MQZHot/DaisyNet
+[19]Forked! --> MQZHot/ZCycleView
+[20]Forked! --> MQZHot/MTransparentNav
+[21]Forked! --> Nealyang/React-Express-Blog-Demo
+[22]Forked! --> Nealyang/React-Fullstack-Dianping-Demo
+[23]Forked! --> Nealyang/study-redux
+[24]Forked! --> Nealyang/blog_WeChat_Official_Accounts
+[25]Forked! --> Nealyang/YOU-SHOULD-KNOW-JS
+[26]Forked! --> WangYves/uvloop
+[27]Forked! --> WangYves/sanic-doc-zh_CN
+[28]Forked! --> WangYves/Debian_workstation
+[29]Forked! --> WangYves/Tinyblog
+[30]Forked! --> WangYves/flask-blog
+[31]Forked! --> WangYves/Partner
+[32]Forked! --> changsanjiang/SJAttributesFactory
+[33]Forked! --> changsanjiang/SJDatabaseMapping
+[34]Forked! --> changsanjiang/SJVideoPlayerBackGR
+[35]Forked! --> changsanjiang/SJSlider
+[36]Forked! --> changsanjiang/SJVideoPlayer
+[37]Forked! --> dianbaer/grain
+[38]Forked! --> dianbaer/juggle
+[39]Forked! --> dianbaer/anychat
+[40]Forked! --> dianbaer/anyupload
+[41]Forked! --> dianbaer/epay
+[42]Forked! --> dianbaer/jupiter
+[43]Forked! --> dianbaer/startpoint
+[44]Forked! --> dianbaer/MMORPG
+[45]Forked! --> facebesidewyj/takeaway_demo
+[46]Forked! --> goldze/MVVMHabit
+[47]Forked! --> hellocassiell/vue-duitang-spa
+[48]Forked! --> hellocassiell/CherryDiary
+[49]Forked! --> linlianmin/laravel-vue
+[50]Forked! --> stackhou/WeChatPlugin-MacOS
+[51]Forked! --> stackhou/YJBannerViewOC
+[52]Forked! --> stackhou/iOS11-Adaptation
+[53]Forked! --> stackhou/AutoPacking-iOS
+[54]Forked! --> stackhou/ElegantTableView
+[55]Forked! --> stackhou/SwiftProgressHUD
+[56]Forked! --> stackhou/YJLocationConverter
+[57]Forked! --> stackhou/YJRouterManagerOC
+[58]Forked! --> striveDJiang/blog
+[59]Forked! --> striveDJiang/JavaScript-utils
+[60]Forked! --> thx/magix
+[61]Forked! --> thx/magix-inspector
+[62]Forked! --> xinglie/xinglie.github.io
+[63]Forked! --> xinglie/html-entities-decoder
+[64]Forked! --> thx/magix-combine
+[65]Forked! --> xinglie/magix-updater
+[66]Forked! --> xinglie/game-diamond
+[67]Forked! --> xinglie/relax
+[68]Forked! --> xinglie/pinyin
+[69]Forked! --> thx/magix-loader
+[70]Forked! --> thx/magix-project
+[71]Forked! --> xinglie/gameboy
+[72]Forked! --> thx/magix-gallery
+[73]Forked! --> thx/magix-os
+[74]Forked! --> xulayen/Blog
+[75]Forked! --> xulayen/CCN
+[76]Forked! --> xulayen/WeChat
+[77]Forked! --> xulayen/jquery.form.red
+[78]Forked! --> xulayen/shellac
+[79]Forked! --> xulayen/hexo-theme-next
+[80]Forked! --> xulayen/react_demo
+[81]Forked! --> xulayen/beego
+[82]Forked! --> xulayen/browerisy-jquery-wechat-sdk
+[83]Forked! --> xulayen/wechathand
+[84]Forked! --> xulayen/wechat-sdk-gen
+[85]Forked! --> xulayen/vConsole
+[86]Forked! --> xulayen/React-Express-Blog-Demo
+[87]Forked! --> xulayen/TribeDB
+[88]Forked! --> xulayen/webpack-for-react
+[89]Forked! --> xulayen/webpack
+[90]Forked! --> xulayen/es6tutorial
+[91]Forked! --> xulayen/react-intl
+[92]Forked! --> xulayen/webpack-for-react-template
+[93]Forked! --> xulayen/turpan
+[94]Forked! --> xulayen/node-jsonwebtoken
+[95]Forked! --> xuningjack/year_month_wheel_dialog
+[96]Forked! --> xuningjack/apikeylib
+[97]Forked! --> xuningjack/ProcessKeep
+[98]Forked! --> xuningjack/drag_click_view
+[99]Forked! --> xuningjack/GuideView
+[100]Forked! --> xuningjack/MultiListView
+[101]Forked! --> xuningjack/ArcImageView
+[102]Forked! --> xuningjack/Character_Line_Feed_TextView
+[103]Forked! --> xuningjack/AndroidNet
+[104]Forked! --> xuningjack/CoverFlow
+[105]Forked! --> xuningjack/ruler
+[106]Forked! --> xuningjack/CustomClock
+[107]Forked! --> xuningjack/fade_in_out_dialog
+[108]Forked! --> xuningjack/trackballs
+[109]Forked! --> xuningjack/select_picture_module
+[110]Forked! --> xuningjack/horizontal_listview
+[111]Forked! --> xuningjack/verticaltextview
+[112]Forked! --> xuningjack/IOSToggleButton
+[113]Forked! --> xuningjack/custom_seekbar
+[114]Forked! --> xuningjack/edittext_with_delete_button
+[115]Forked! --> xuningjack/email_auto_popupwindow
+[116]Forked! --> xuningjack/CustomImageView
+[117]Forked! --> xuningjack/CustomToast
+[118]Forked! --> xuningjack/hexagon
+[119]Forked! --> xuningjack/name_indexbar
+[120]Forked! --> xuningjack/datepickerdialog
+[121]Forked! --> xuningjack/ImageLoader
+[122]Forked! --> xuningjack/JCrash
+[123]Forked! --> xuningjack/ServiceKeep
+[124]Forked! --> xuningjack/AndroidMultiChannelBuild
+[125]Forked! --> yangchaojiang/yjPlay
+[126]Forked! --> yangchaojiang/ZoomPreviewPicture
+[127]Forked! --> younglaker/octjs
+[128]Forked! --> younglaker/EasyCanvas
+[129]Forked! --> younglaker/CometLab
+update:True
