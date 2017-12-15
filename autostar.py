@@ -44,14 +44,23 @@ class Star(StarBase):
         return [r['Repo'] for r in result if r.get('scoreR') < self.scorer]
 
     def star(self, project_name):
-        requests.put("https://api.github.com/user/starred/" + project_name,
-                     headers={'Content-Length': '0'}, auth=self.auth)
+        res = requests.put("https://api.github.com/user/starred/" + project_name,
+                           headers={'Content-Length': '0'}, auth=self.auth)
+
+        print("[%d]Stared  %s! --> %s" % (self.counter, 'OK' if res.ok else 'Failure', project_name))
+
+    def update_gitstar(self):
+        url = "http://gitstar.top:88/star_update"
+        res = requests.get(url, headers={'Accept': 'application/json', 'Cookie': self.cookie})
+        print "update: %s" % str(res.status_code == 200)
 
     def run(self):
         projects = self.projects_list()
+        print "Get total github project count:%d" % len(projects)
         for project_name in projects:
             self.star(project_name)
-            print("[%d]Stared! --> %s" % (self.counter, project_name))
+        if len(projects) > 0:
+            self.update_gitstar()
 
 
 class Floolw(StarBase):
@@ -62,23 +71,31 @@ class Floolw(StarBase):
             return []
         bs = BeautifulSoup(response.text, "html.parser")
         jsn = bs.find_all("div", class_="media")
-        list = []
+        projects = []
         for obj in jsn:
             try:
-                list.append(obj.find('a')['href'].replace("https://github.com/", ""))
+                projects.append(obj.find('a')['href'].replace("https://github.com/", ""))
             except Exception as e:
                 pass
-        return list
+        return projects
 
     def follow(self, project_name):
-        requests.put("https://api.github.com/user/following/%s" % project_name,
-                     headers={'Content-Length': '0'}, auth=self.auth)
+        res = requests.put("https://api.github.com/user/following/%s" % project_name,
+                           headers={'Content-Length': '0'}, auth=self.auth)
+        print("[%d]Followed  %s! --> %s" % (self.counter, 'OK' if res.ok else 'Failure', project_name))
+
+    def update_gitstar(self):
+        url = "http://gitstar.top:88/follow_update"
+        res = requests.get(url, headers={'Accept': 'application/json', 'Cookie': self.cookie})
+        print "update: %s" % str(res.status_code == 200)
 
     def run(self):
         projects = self.projects_list()
+        print "get total github repo:%d" % len(projects)
         for project_name in projects:
             self.follow(project_name)
-            print("[%d]Followed! -->%s" % (self.counter, project_name))
+        if len(projects) > 0:
+            self.update_gitstar()
 
 
 class Fork(StarBase):
@@ -90,22 +107,22 @@ class Fork(StarBase):
         result = response.json()
         return [r['Repo'] for r in result if r.get('scoreR') < self.scorer]
 
-    def fork(self, url):
-        requests.post("https://api.github.com/repos/%s/forks" % url,
-                      headers={'Content-Length': '0'},
-                      auth=self.auth)
+    def fork(self, project_name):
+        res = requests.post("https://api.github.com/repos/%s/forks" % project_name,
+                            headers={'Content-Length': '0'},
+                            auth=self.auth)
+        print("[%d]Forked  %s! --> %s" % (self.counter, 'OK' if res.ok else 'Failure', project_name))
 
     def update_gitstar(self):
         url = "http://gitstar.top:88/api/users/%s/forking-repos/update" % settings.NAME
         res = requests.get(url, headers={'Accept': 'application/json', 'Cookie': self.cookie})
-        print "update:" + str(res.status_code == 200)
+        print "update: %s" % str(res.status_code == 200)
 
     def run(self):
         projects = self.projects_list()
         print "get total github repo:%d" % len(projects)
         for project_name in projects:
             self.fork(project_name)
-            print "[%d]Forked! --> %s" % (self.counter, project_name)
         if len(projects) > 0:
             self.update_gitstar()
 
