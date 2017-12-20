@@ -8,7 +8,7 @@
 
 
 
-NAME = "knitmesh"
-PASSWORD = "15674427"
-GITNAME = "kokkkkkka"
-GITPASSWORD = "beidong.1229.."
+NAME = "cld378632668"
+PASSWORD = "gitstar"
+GITNAME = "x4612224zahe61739"
+GITPASSWORD = "cf791812"
